@@ -1,8 +1,8 @@
-# Olá <img src='public/img/greeting.png' alt='Greeting icon animated'>! <br> Eu sou o Adriano
+# Olá ! <br> Me chamo Adriano <img src='public/img/greeting.png' alt='Greeting icon animated'>
+<small>Full-stack web dev</small>
+<br>
 
-Desenvolvedor Web Full stack apaixonado por tecnologia e sempre em busca de aprender novas habilidades!
-
-## 🚀 Tecnologias que eu domino
+## 🚀 Tecnologias :
 
 - **Frontend:** JavaScript, TypeScript, React, HTML, CSS, SASS
 - **Backend:** Node.js, Express
