@@ -1,6 +1,16 @@
-# Olá <img src='public/img/greeting.png'>! <br> Eu sou o Adriano
+# Olá <img src='public/img/greeting.png' alt='Greeting icon animated'>! <br> Eu sou o Adriano
 
-Desenvolvedor Full stack apaixonado por tecnologia e sempre em busca de aprender novas habilidades e aplicar soluções criativas para problemas do dia a dia. Tenho experiência em uma ampla gama de tecnologias, incluindo desenvolvimento web, bancos de dados, Docker e deploy de servidores.
+Desenvolvedor Web Full stack apaixonado por tecnologia e sempre em busca de aprender novas habilidades!
+
+## 🚀 Tecnologias que eu domino
+
+- **Frontend:** JavaScript, TypeScript, React, HTML, CSS, SASS
+- **Backend:** Node.js, Express
+- **Banco de dados:** MongoDB, SQL Server, SQLite, Redis
+- **Deploy:** Docker, GitHub Pages, Render, CMake
+- **Outras:** C, Python
+- **Ide's:** VS-Code, Pycharm
+- **OS:** Windows, WSL, Ubuntu, Linux.
 
 <!--
 **AdrianoLMRS/AdrianoLMRS** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
