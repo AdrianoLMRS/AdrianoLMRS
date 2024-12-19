@@ -55,26 +55,27 @@
             width: 50%;
             display: flex;
             flex-direction: column;
-            gap: 10px;
         }
         ul {
             list-style-type: none;
         }
         li {
+            margin-top: 10px;
+            margin-bottom: 10px;
             color: snow;
         }
         li strong {
             color: #ffa657;
             font-weight: initial;
         }
-        .stack-header {
+        .header {
             display: inline;
             position: relative;
             font-size: larger;
             color: #ffa657;
             bottom: 10px;
         }
-        .stack-header::after {
+        .header::after {
             content: '';
             position: absolute;
             bottom: -10%;
@@ -86,6 +87,16 @@
         .about {
             width: 50%;
         }
+        #avatar {
+            margin-top: 20px;
+            max-width: 65px;
+            height: auto;
+            border-radius: 10px; 
+            border: 1px dashed #20C20E; 
+            padding: 5px;
+            background-color: #000000; 
+        }
+
     </style>
 </head>
 <body>
@@ -98,11 +109,21 @@
             <div class="results">
                 <div class="flex">
                     <div class="about">
-
+                        <ul>
+                            <header class="header">Sobre</header>
+                            <li><strong>Nome:</strong> <span id="">Adriano Lima Rossi</span></li>
+                            <li><strong>Repositórios Públicos:</strong> <span id="repos"></span></li>
+                            <li><strong>Seguidores:</strong> <span id="followers"></span></li>
+                            <li><strong>Seguindo:</strong> <span id="following"></span></li>
+                            <li><strong>Localização:</strong> <span id="loc"></span></li>
+                            <li><strong>Perfil:</strong> <span id="profile"></span></li>
+                            <li><strong>Data de Criação:</strong> <span id="created_at"></span></li>
+                            <li><img alt="Avatar Logo Github" id="avatar"></li>
+                        </ul>
                     </div>
                     <div class="stack">
                         <ul>
-                            <header class="stack-header">Stack</header>
+                            <header class="header">Stack</header>
                             <li><strong>Frontend:</strong> JavaScript, TypeScript, React, HTML, CSS, SASS</li>
                             <li><strong>Backend:</strong> Node.js, Express</li>
                             <li><strong>Banco de dados:</strong> MongoDB, SQL Server, SQLite, Redis</li>
@@ -116,5 +137,24 @@
             </div>
         </div>
     </div>
+    <script defer>
+        // Github API for getting profile info
+        async function fetchGitHubStats() {
+            const username = 'AdrianoLMRS'; // My username
+            const response = await fetch(`https://api.github.com/users/${username}`);
+            const data = await response.json();
+            console.log(data);
+        
+            // HTML data
+            document.getElementById('repos').textContent = data.public_repos;
+            document.getElementById('followers').textContent = data.followers;
+            document.getElementById('following').textContent = data.following;
+            document.getElementById('loc').textContent = data.location;
+            document.getElementById('profile').textContent = data.html_url;
+            document.getElementById('avatar').src = data.avatar_url;
+            document.getElementById('created_at').textContent = new Date(data.created_at).toLocaleDateString();
+        }
+        window.onload = fetchGitHubStats;
+    </script>
 </body>
 </html>

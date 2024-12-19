@@ -12,6 +12,13 @@
 - **Ide's:** VS-Code, Pycharm
 - **OS:** Windows, WSL, Ubuntu, Linux.
 
+
+![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=AdrianoLMRS&show_icons=true&theme=radical)
+
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?AdrianoLMRS&layout=compact&theme=radical)
+
+
 <!--
 **AdrianoLMRS/AdrianoLMRS** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
