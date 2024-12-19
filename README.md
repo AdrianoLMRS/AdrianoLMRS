@@ -1,21 +1,16 @@
 # Olá ! <br> Me chamo Adriano <img src='public/img/greeting.png' alt='Greeting icon animated'>
-<small>**Full-stack web dev**</small>
+<small>**Full-stack dev**</small>
 <br>
 
 <!-- Terminal .gif -->
-<small>
-    <sup>
-        <details align='end' open>
-        <br>
-            <center>
-                <a href='https://github.com/AdrianoLMRS/AdrianoLMRS/blob/main/public/stackCMD.html'>
-                    <img src='public/img/terminal.gif' alt='Terminal.gif animated'>
-                </a>
-            </center>
-            <summary></summary>
-        </details>
-    </sup>
-</small>
+
+<center>
+    <a href='https://github.com/AdrianoLMRS/AdrianoLMRS/blob/main/public/stackCMD.html'>
+        <img src='public/img/terminal.gif' alt='Terminal.gif animated'>
+    </a>
+</center>
+
+
 <br><br><br>
 
 ## Habilidades :
