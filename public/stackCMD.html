@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stack comand for info in readme profile</title>
+    <title>Stack command for info in readme profile</title>
     <style>
         :root {
             font-size: x-large;
@@ -30,9 +30,6 @@
             padding: 10px;
             border: 1px solid hsl(0, 0%, 15%);
         }
-        .cmd {
-            color: goldenrod;
-        }
         span.get {
             color: lightblue;   
         }
@@ -49,7 +46,6 @@
         .flex {
             display: flex;
             flex-direction: row;
-            gap: 10px;
         }
         .stack {
             width: 50%;
@@ -69,18 +65,20 @@
             font-weight: initial;
         }
         .header {
-            display: inline;
+            display: inline-block;
             position: relative;
             font-size: larger;
             color: #ffa657;
             bottom: 10px;
+            overflow: visible !important;
         }
-        .header::after {
+        .pseudo::after {
             content: '';
             position: absolute;
-            bottom: -10%;
+            bottom: -20%;
             left: 0;
             height: 1px;
+            max-width: 80px;
             width: 120%;
             background-color: #ffa657;
         }
@@ -96,6 +94,50 @@
             padding: 5px;
             background-color: #000000; 
         }
+        .cmd {
+            color: goldenrod;
+            white-space: nowrap;
+        }
+        .cmd p {
+            display: inline-block;
+            white-space: nowrap; /* Keeps the content on a single line */
+        }
+        .typewriter > * {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: var(--_border-width, .15em) solid var(--_border-color, #20C20E); /* The typwriter cursor */
+            letter-spacing: .15em; /* Adjust as needed */
+            margin: 0 !important;
+            animation: 
+                typing2 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+                
+        .simple-typewriter li {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            letter-spacing: .1em; /* Adjust as needed */
+            white-space: nowrap;
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+            animation-delay: 3s;
+        }
+
+            /* The typing effect */
+            @keyframes typing {
+            from { width: 0; }
+            to { width: 100% }
+        }
+            /* The typing effect */
+            @keyframes typing2 {
+            from { width: 0 }
+            to { width: 70% }
+        }
+
+            /* The typewriter cursor effect */
+            @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: var(--_border-color, #20C20E); }
+        }
 
     </style>
 </head>
@@ -103,14 +145,17 @@
     <div class="root">
         <div class="content">
             <!-- inspired by https://github.com/Andrew6rant/Andrew6rant -->
-            <div class="cmd"><span class="green">curl</span> <span class="get">GET</span> <span class="green">-i</span>
-                 https://AdrianoLMRS/<span class="yellow">info</span></div>
+            <div class="cmd typewriter">
+                <p>
+                    <span class="green">curl</span> <span class="get">GET</span> <span class="green">-i</span>
+                    https://AdrianoLMRS/<span class="yellow">info</span></div>
+                </p>
             <br><br>
             <div class="results">
                 <div class="flex">
                     <div class="about">
-                        <ul>
-                            <header class="header">Sobre</header>
+                        <ul class="simple-typewriter">
+                            <header class="header pseudo">Sobre</header>
                             <li><strong>Nome:</strong> <span id="">Adriano Lima Rossi</span></li>
                             <li><strong>Repositórios Públicos:</strong> <span id="repos"></span></li>
                             <li><strong>Seguidores:</strong> <span id="followers"></span></li>
@@ -122,8 +167,8 @@
                         </ul>
                     </div>
                     <div class="stack">
-                        <ul>
-                            <header class="header">Stack</header>
+                        <ul class="simple-typewriter">
+                            <header class="header pseudo">Stack</header>
                             <li><strong>Frontend:</strong> JavaScript, TypeScript, React, HTML, CSS, SASS</li>
                             <li><strong>Backend:</strong> Node.js, Express</li>
                             <li><strong>Banco de dados:</strong> MongoDB, SQL Server, SQLite, Redis</li>
@@ -137,14 +182,28 @@
             </div>
         </div>
     </div>
-    <script defer>
-        // Github API for getting profile info
+
+    <script>
+        document.querySelectorAll('.simple-typewriter li').forEach((li) => {
+            li.style.width = '0'; 
+        });
+
+        setTimeout(() => {
+            document.querySelectorAll('.simple-typewriter li').forEach((li) => {
+                li.style.width = ''; 
+            });
+        }, 3000);
+
+    </script>
+
+    <script>
+        // GitHub API for getting profile info
         async function fetchGitHubStats() {
             const username = 'AdrianoLMRS'; // My username
             const response = await fetch(`https://api.github.com/users/${username}`);
             const data = await response.json();
             console.log(data);
-        
+            
             // HTML data
             document.getElementById('repos').textContent = data.public_repos;
             document.getElementById('followers').textContent = data.followers;
@@ -154,7 +213,11 @@
             document.getElementById('avatar').src = data.avatar_url;
             document.getElementById('created_at').textContent = new Date(data.created_at).toLocaleDateString();
         }
-        window.onload = fetchGitHubStats;
+
+        // Calling the function on page load to animate the curl command
+        window.onload = function() {          
+            fetchGitHubStats();
+        };
     </script>
 </body>
 </html>
