@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack comand for info in readme profile</title>
+    <style>
+        :root {
+            font-size: x-large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: snow;
+        }
+        .root {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            height: 550px;
+            width: 800px;
+            background-color: hsl(0, 0%, 10%);
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: 85%;
+            padding: 10px;
+            border: 1px solid hsl(0, 0%, 15%);
+        }
+        .cmd {
+            color: orange;
+        }
+        .cmd span.get {
+            color: lightblue;   
+        }
+        .cmd span.i {
+            color: #20C20E;   
+        }
+        .results {
+            margin-left: 50%;
+            width: fit-content;
+            font-size: medium;
+        }
+        .flex {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            color: snow;
+        }
+        li strong {
+            color: #ffa657;
+            font-weight: initial;
+        }
+    </style>
+</head>
+<body>
+    <div class="root">
+        <div class="content">
+            <!-- inspired by https://github.com/Andrew6rant/Andrew6rant -->
+            <div class="cmd">curl <span class="get">GET</span> <span class="i">-i</span> https://AdrianoLMRS/info</div>
+            <br><br>
+            <div class="results">
+                <div class="flex">
+                    <ul>
+                        <li><strong>Frontend:</strong> JavaScript, TypeScript, React, HTML, CSS, SASS</li>
+                        <li><strong>Backend:</strong> Node.js, Express</li>
+                        <li><strong>Banco de dados:</strong> MongoDB, SQL Server, SQLite, Redis</li>
+                        <li><strong>Deploy:</strong> Docker, GitHub Pages, Render, CMake</li>
+                        <li><strong>Outras:</strong> C, Python</li>
+                        <li><strong>IDE's:</strong> VS-Code, Pycharm</li>
+                        <li><strong>OS:</strong> Windows, WSL, Ubuntu, Linux</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

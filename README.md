@@ -26,3 +26,12 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+
+<!--
+    * IDEAS *
+    
+    -  terminal in stack with comand `curl GET -i AdrianoLMRS/info`
+       que mostras toda minha stack
+    
+ -->
