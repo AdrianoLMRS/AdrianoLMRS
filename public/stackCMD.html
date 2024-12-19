@@ -31,20 +31,28 @@
             border: 1px solid hsl(0, 0%, 15%);
         }
         .cmd {
-            color: orange;
+            color: goldenrod;
         }
-        .cmd span.get {
+        span.get {
             color: lightblue;   
         }
-        .cmd span.i {
+        span.green {
             color: #20C20E;   
         }
+        span.yellow {
+            color: greenyellow;
+        }
         .results {
-            margin-left: 50%;
-            width: fit-content;
+            width: 100%;
             font-size: medium;
         }
         .flex {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .stack {
+            width: 50%;
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -59,25 +67,51 @@
             color: #ffa657;
             font-weight: initial;
         }
+        .stack-header {
+            display: inline;
+            position: relative;
+            font-size: larger;
+            color: #ffa657;
+            bottom: 10px;
+        }
+        .stack-header::after {
+            content: '';
+            position: absolute;
+            bottom: -10%;
+            left: 0;
+            height: 1px;
+            width: 120%;
+            background-color: #ffa657;
+        }
+        .about {
+            width: 50%;
+        }
     </style>
 </head>
 <body>
     <div class="root">
         <div class="content">
             <!-- inspired by https://github.com/Andrew6rant/Andrew6rant -->
-            <div class="cmd">curl <span class="get">GET</span> <span class="i">-i</span> https://AdrianoLMRS/info</div>
+            <div class="cmd"><span class="green">curl</span> <span class="get">GET</span> <span class="green">-i</span>
+                 https://AdrianoLMRS/<span class="yellow">info</span></div>
             <br><br>
             <div class="results">
                 <div class="flex">
-                    <ul>
-                        <li><strong>Frontend:</strong> JavaScript, TypeScript, React, HTML, CSS, SASS</li>
-                        <li><strong>Backend:</strong> Node.js, Express</li>
-                        <li><strong>Banco de dados:</strong> MongoDB, SQL Server, SQLite, Redis</li>
-                        <li><strong>Deploy:</strong> Docker, GitHub Pages, Render, CMake</li>
-                        <li><strong>Outras:</strong> C, Python</li>
-                        <li><strong>IDE's:</strong> VS-Code, Pycharm</li>
-                        <li><strong>OS:</strong> Windows, WSL, Ubuntu, Linux</li>
-                    </ul>
+                    <div class="about">
+
+                    </div>
+                    <div class="stack">
+                        <ul>
+                            <header class="stack-header">Stack</header>
+                            <li><strong>Frontend:</strong> JavaScript, TypeScript, React, HTML, CSS, SASS</li>
+                            <li><strong>Backend:</strong> Node.js, Express</li>
+                            <li><strong>Banco de dados:</strong> MongoDB, SQL Server, SQLite, Redis</li>
+                            <li><strong>Deploy:</strong> Docker, GitHub Pages, Render, CMake</li>
+                            <li><strong>Outras:</strong> C, Python</li>
+                            <li><strong>IDE's:</strong> VS-Code, Pycharm</li>
+                            <li><strong>OS:</strong> Windows, WSL, Ubuntu, Linux</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
