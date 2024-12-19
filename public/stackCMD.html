@@ -10,6 +10,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: snow;
         }
+        body { background-color: wheat; }
         .root {
             position: absolute;
             top: 50%;
@@ -71,6 +72,7 @@
             color: #ffa657;
             bottom: 10px;
             overflow: visible !important;
+            transition: opacity 300ms;
         }
         .pseudo::after {
             content: '';
@@ -108,7 +110,7 @@
             letter-spacing: .15em; /* Adjust as needed */
             margin: 0 !important;
             animation: 
-                typing2 3.5s steps(40, end),
+                typing2 2000ms steps(40, end),
                 blink-caret .75s step-end infinite;
         }
                 
@@ -117,26 +119,31 @@
             letter-spacing: .1em; /* Adjust as needed */
             white-space: nowrap;
             animation: 
-                typing 3.5s steps(40, end),
+                typing 1.5s steps(40, end),
                 blink-caret .75s step-end infinite;
-            animation-delay: 3s;
+            animation-delay: 3.4s;
         }
 
-            /* The typing effect */
             @keyframes typing {
             from { width: 0; }
             to { width: 100% }
         }
-            /* The typing effect */
             @keyframes typing2 {
             from { width: 0 }
-            to { width: 70% }
+            to { width: 70%; }
         }
 
-            /* The typewriter cursor effect */
             @keyframes blink-caret {
             from, to { border-color: transparent }
             50% { border-color: var(--_border-color, #20C20E); }
+        }
+
+        .loading {
+            font-size: 20px;
+            margin-top: -50px;
+            font-family: Arial, sans-serif;
+            display: inline-block;
+            position: relative;
         }
 
     </style>
@@ -149,7 +156,9 @@
                 <p>
                     <span class="green">curl</span> <span class="get">GET</span> <span class="green">-i</span>
                     https://AdrianoLMRS/<span class="yellow">info</span></div>
-                </p>
+                </p><br>
+                <div id="loading" style="opacity: 0;" class="loading">loading<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div>
+                <div style="display: none;" class="loading" id="succes">success!</div>
             <br><br>
             <div class="results">
                 <div class="flex">
@@ -187,12 +196,61 @@
         document.querySelectorAll('.simple-typewriter li').forEach((li) => {
             li.style.width = '0'; 
         });
+        document.querySelectorAll('.header').forEach((h) => {
+            h.style.opacity = '0'; 
+        });
 
         setTimeout(() => {
             document.querySelectorAll('.simple-typewriter li').forEach((li) => {
                 li.style.width = ''; 
             });
-        }, 3000);
+        }, 3400);
+
+        setTimeout(() => {
+            document.querySelectorAll('.header').forEach((h) => {
+                h.style.opacity = '1'; 
+            });
+        }, 3200);
+
+        setTimeout(() => {
+            document.querySelector('.cmd > p').style.border = 'none'
+        }, 4000);
+
+    </script>
+    <script>
+        const loadingElement = document.getElementById('loading');
+
+        setTimeout(() => {
+            loadingElement.style.opacity = '1';
+        }, 2050); 
+
+        function addDots() {
+            let dots = 0;
+            const interval = setInterval(() => {
+                loadingElement.textContent = 'loading' + '.'.repeat(dots);
+
+                dots++;
+
+                if (dots > 3) {
+                    dots = 0;
+                }
+            }, 200);
+
+            return interval;
+        }
+
+        function stopLoadingAnimation(interval) {
+            setTimeout(() => {
+                clearInterval(interval);
+                loadingElement.textContent = 'loading'; 
+                loadingElement.style.display = 'none';
+                document.getElementById('succes').style.display = 'block'; 
+            }, 3000); 
+        }
+
+        const interval = addDots();
+
+        stopLoadingAnimation(interval);
 
     </script>
 
