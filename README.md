@@ -2,7 +2,16 @@
 <small>**Full-stack web dev**</small>
 <br>
 
+<small>
+<sub>
+<details open>
+<a href='https://github.com/AdrianoLMRS/AdrianoLMRS/blob/main/public/stackCMD.html'>
 <img src='public/img/terminal.gif' alt='Greeting icon animated'>
+</a>
+<summary></summary>
+</details>
+</sub>
+</small>
 
 ## 🚀 Tecnologias :
 
