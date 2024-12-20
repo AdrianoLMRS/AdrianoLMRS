@@ -64,10 +64,8 @@
 </p>
 <br><br>
 
-### <details><summary>Pousada TAO</summary>
-
-> Clique [aqui](https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme) para ver o repositório
->> <table width="100%">
+### <details><summary>Pousada TAO</summary><div><br><h6>Clique [aqui](https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme) para ver o repositório<br><table width="100%">
+<br>
   <thead>
     <tr>
       <th align="left" colspan="2"><strong>Detalhes do Projeto</strong></th>
@@ -108,11 +106,9 @@
       </td>
     </tr>
   </tbody>
-</table><br>
+</table></div></details></h6>
 
 
-
-</details>
 
 
 
