@@ -4,7 +4,7 @@
 </h1>
 </div>
 <small><b>Full-stack dev</b></small>
-<br>
+<br><br><br>
 
 <!-- Terminal .gif -->
 
@@ -56,12 +56,64 @@
 <!-- Placeholders ... -->
 <p align="center">
       <a href='https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme'>
-        <img width="320px" height="590px" alt="Pousada TAO project GIF" src="public/img/pousadaTao2-ezgif.com-crop.png"/>
+        <img width="320px" height="590px" alt="Pousada TAO project GIF" src="public/img/pousadaTao2-ezgif.com-crop.png"/> <!-- Pousada TAO -->
       </a>&emsp;&emsp;
       <a href='https://github.com/AdrianoLMRS/Image-to-ASCII'>
-        <img width="320px" height="590px" alt="Pousada TAO project GIF" src="public/img/image-to-ascii.gif"/>
+        <img width="320px" height="590px" alt="Pousada TAO project GIF" src="public/img/image-to-ascii.gif"/> <!-- Image-to-ASCII -->
       </a>&emsp;&emsp;
 </p>
+<br><br>
+
+### <details><summary>Pousada TAO</summary>
+
+> Clique [aqui](https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme) para ver o repositório
+>> <table width="100%">
+  <thead>
+    <tr>
+      <th align="left" colspan="2"><strong>Detalhes do Projeto</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="20%"><strong>Frontend</strong></td>
+      <td>HTML, CSS, JavaScript (puro)</td>
+    </tr>
+    <tr>
+      <td><strong>Backend</strong></td>
+      <td>Node.js, Express.js</td>
+    </tr>
+    <tr>
+      <td><strong>Banco de Dados</strong></td>
+      <td>
+        MongoDB com Mongoose  
+        (<a href="https://www.mongodb.com/resources/products/platform/mongodb-atlas-tutorial">MongoDB Atlas</a>)
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Deploy</strong></td>
+      <td>Docker hospedado no <a href="https://render.com/about">Render</a></td>
+    </tr>
+    <tr>
+      <td><strong>Pagamentos</strong></td>
+      <td><a href="https://www.nerdwallet.com/article/small-business/what-is-stripe">Stripe</a></td>
+    </tr>
+    <tr>
+      <td><strong>Mensagens</strong></td>
+      <td>Email com Nodemailer&emsp;&emsp;||&emsp;&emsp;SMS com Twilio</td>
+    </tr>
+    <tr>
+      <td><strong>API's</strong></td>
+      <td>
+        Stripe&emsp;&emsp;||&emsp;&emsp;Auth0 com MongoDB
+      </td>
+    </tr>
+  </tbody>
+</table><br>
+
+
+
+</details>
+
 
 
 <!-- <img align='right' src="public/img/icons8-pdf-50.png" alt='Pdf Icon'> -->
