@@ -56,12 +56,12 @@
 <br><br>
 
 <!-- Placeholders ... -->
-<img width='29%%' align="left" alt="Language English" src="https://placehold.jp/220x500.png"/>
+<img width='29%' height='570px' align="left" alt="Language English" src="https://placehold.jp/300x570.png"/>
 
-<img width='29%%' align="right" alt="Language English" src="https://placehold.jp/220x500.png"/>
+<img width='29%' height='570px' align="right" alt="Language English" src="https://placehold.jp/300x570.png"/>
 
 <p align="center">
-<img width='29%%' alt="Language English" src="https://placehold.jp/220x500.png"/>
+<img width='29%' height='570px' alt="Language English" src="https://placehold.jp/300x570.png"/>
 </p>
 
 
