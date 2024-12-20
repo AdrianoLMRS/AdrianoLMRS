@@ -72,7 +72,7 @@
 <br>
   <thead>
     <tr>
-      <th align="left" colspan="2"><strong>Detalhes do Projeto</strong></th>
+      <th align="left" colspan="2"><strong>Detalhes do Projeto&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -112,11 +112,15 @@
   </tbody>
 </table></div></details></h6></h3>
 
-<h3><details><summary>Image-to-ascii</summary><div><br><h6>Clique <a href='https://github.com/AdrianoLMRS/Image-to-ASCII'>aqui</a> para ver o repositório<br><table width="100%">
+<h3><details><summary>Image-to-ascii</summary><div><br><h6>Clique <a href='https://github.com/AdrianoLMRS/Image-to-ASCII'>aqui</a> para ver o repositório<br>
+<br>
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AdrianoLMRS&repo=Image-to-ASCII&theme=transparent&)](https://github.com/AdrianoLMRS/Image-to-ASCII)
+<table width="100%">
 <br>
   <thead>
     <tr>
-      <th align="left" colspan="2"><strong>Detalhes do Projeto</strong></th>
+      <th align="left" colspan="2"><strong>Detalhes do Projeto&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</strong></th>
     </tr>
   </thead>
   <tbody>
