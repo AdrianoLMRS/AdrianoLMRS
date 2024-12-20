@@ -40,6 +40,10 @@
         span.second {
             font-weight: bold;
         }
+        img {
+            max-width: 280px;
+            max-height: 550px;
+        }
     </style>
 </head>
 
@@ -52,7 +56,7 @@
                 </header>
                 <div class="card-body">
                     <div class="gif">
-                        <img src="https://placehold.jp/280x300.png" alt="Pousada TAO gif" srcset="">
+                        <img src="../pousadaTao.gif" alt="Pousada TAO gif" srcset="">
                     </div>
                     <p class="card-text"><span class='principal'>Pousada TAO</span> é uma <span class="second">Web app</span> 
                         de uma Pousada real em Campos do Jordão</p>
@@ -61,23 +65,5 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // GitHub API for getting profile info
-        async function fetchGitHubStats() {
-            const username = 'AdrianoLMRS'; // My username
-            const response = await fetch(`https://api.github.com/users/${username}`);
-            const data = await response.json();
-            console.log(data);
-            
-            // HTML data
-            document.getElementById('avatar').src = data.avatar_url;
-        }
-
-        // Calling the function on page load to animate the curl command
-        window.onload = function() {          
-            fetchGitHubStats();
-        };
-    </script>
   </body>
 </html>
