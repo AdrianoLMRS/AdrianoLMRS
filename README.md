@@ -73,7 +73,7 @@
   </thead>
   <tbody>
     <tr>
-      <td width="20%"><strong>Frontend</strong></td>
+      <td width="40%"><strong>Frontend</strong></td>
       <td>HTML, CSS, JavaScript (puro)</td>
     </tr>
     <tr>
@@ -117,21 +117,37 @@
   </thead>
   <tbody>
     <tr>
-      <td width="20%"><strong>Linguagens</strong></td>
+      <td width="60%"><strong>Linguagens</strong></td>
       <td>C & CMAKE</td>
     </tr>
     <tr>
-      <td width="20%"><strong>Compiladores</strong></td>
+      <td><strong>Compiladores</strong></td>
       <td>GCC & G++</td>
     </tr>
     <tr>
-      <td width="20%"><strong>OS</strong></td>
+      <td><strong>OS</strong></td>
       <td>Ubuntu (WSL)</td>
     </tr>
   </tbody>
 </table></div></details></h6></h3>
+<br><br><br>
 
+## Github stats
+<br>
 
+<div align='center'>
+
+![Stast](https://github-readme-stats.vercel.app/api?username=AdrianoLMRS&show_icons=true&theme=transparent&custom_title=Estatísticas&rank_icon=github)&emsp;&emsp;&emsp;
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AdrianoLMRS&layout=compact&theme=transparent&custom_title=Linguagens&langs_count=8)
+
+</div>
+<br><br><br>
+
+<details><summary>Repositórios</summary>
+<br>
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AdrianoLMRS&repo=Pousada-TAO&theme=transparent&)](https://github.com/AdrianoLMRS/Pousada-TAO)
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AdrianoLMRS&repo=Image-to-ASCII&theme=transparent&)](https://github.com/AdrianoLMRS/Image-to-ASCII)</details>
 
 
 
