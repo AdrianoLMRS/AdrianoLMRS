@@ -4,8 +4,6 @@
 </h1>
 </div>
 <small><b>Full-stack dev</b></small>
-<nobr><p align='right' >asdasdasd</p>
-</nobr>
 <br>
 
 <!-- Terminal .gif -->
@@ -60,15 +58,9 @@
       <a href='https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme'>
         <img width="320px" height="590px" alt="Pousada TAO project GIF" src="public/img/pousadaTao2-ezgif.com-crop.png"/>
       </a>&emsp;&emsp;
-      <!-- <a href='https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme'>
-        <img width="320px" height="590px" alt="Pousada TAO project GIF" src="public/img/pousadaTao2-ezgif.com-crop.png"/>
+      <a href='https://github.com/AdrianoLMRS/Image-to-ASCII'>
+        <img width="320px" height="590px" alt="Pousada TAO project GIF" src="public/img/image-to-ascii.gif"/>
       </a>&emsp;&emsp;
-      <a href='https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme'>
-        <img width="320px" height="590px" alt="Pousada TAO project GIF" src="public/img/pousadaTao2-ezgif.com-crop.png"/>
-      </a>&emsp;&emsp;
-            <a href='https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme'>
-        <img width="320px" height="590px" alt="Pousada TAO project GIF" src="public/img/pousadaTao2-ezgif.com-crop.png"/>
-      </a>&emsp;&emsp; -->
 </p>
 
 
