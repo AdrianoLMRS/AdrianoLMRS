@@ -67,7 +67,7 @@
 <h3> <details><summary>Pousada-TAO</summary><div><br><h6>Clique <a href='https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme'>aqui</a> para ver o repositório<br>
 <br>
 
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AdrianoLMRS&repo=Pousada-TAO&theme=transparent&)](https://github.com/AdrianoLMRS/Pousada-TAO)
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AdrianoLMRS&repo=Pousada-TAO&theme=transparent&)](https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme)
 <table width="100%">
 <br>
   <thead>
@@ -154,10 +154,10 @@
 <details><summary>Repositórios</summary>
 <br>
 
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AdrianoLMRS&repo=Pousada-TAO&theme=transparent&)](https://github.com/AdrianoLMRS/Pousada-TAO)
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AdrianoLMRS&repo=Pousada-TAO&theme=transparent&)](https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme)
 [![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AdrianoLMRS&repo=Image-to-ASCII&theme=transparent&)](https://github.com/AdrianoLMRS/Image-to-ASCII)</details>
 
-
+<!-- [![AdrianoLMRS WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=AdrianoLMRS)](https://github.com/anuraghazra/github-readme-stats) -->
 
 <!-- <img align='right' src="public/img/icons8-pdf-50.png" alt='Pdf Icon'> -->
 <!--
