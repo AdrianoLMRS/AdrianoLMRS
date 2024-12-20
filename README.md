@@ -56,20 +56,20 @@
 <br><br>
 
 <!-- Placeholders ... -->
-<p align="left">
-  <img width="33%" height="600px" alt="Pousada TAO project GIF" src="public/img/pousadaTao2-ezgif.com-crop.png"/>
-  <img width="33%" height="600px" align='right' alt="" src="https://placehold.jp/300x570.png"/>
+<p align="center">
+      <a href='https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme'>
+        <img width="320px" height="590px" alt="Pousada TAO project GIF" src="public/img/pousadaTao2-ezgif.com-crop.png"/>
+      </a>&emsp;&emsp;
+      <!-- <a href='https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme'>
+        <img width="320px" height="590px" alt="Pousada TAO project GIF" src="public/img/pousadaTao2-ezgif.com-crop.png"/>
+      </a>&emsp;&emsp;
+      <a href='https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme'>
+        <img width="320px" height="590px" alt="Pousada TAO project GIF" src="public/img/pousadaTao2-ezgif.com-crop.png"/>
+      </a>&emsp;&emsp;
+            <a href='https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme'>
+        <img width="320px" height="590px" alt="Pousada TAO project GIF" src="public/img/pousadaTao2-ezgif.com-crop.png"/>
+      </a>&emsp;&emsp; -->
 </p>
-
-<br><br><br>
-
-<p align="left">
-  <img width="33%" height="600px" alt="" src="https://placehold.jp/300x570.png"/>
-  <img width="33%" height="600px" align='right' alt="" src="https://placehold.jp/300x570.png"/>
-</p>
-
-
-
 
 
 <!-- <img align='right' src="public/img/icons8-pdf-50.png" alt='Pdf Icon'> -->
