@@ -150,7 +150,7 @@
 </div></details></h6></h3>
 <br><br>
 
-## Github stats
+## Estatísticas Github
 <br>
 
 <div align='center'>
@@ -173,6 +173,24 @@
 </div>
 
 <!-- [![AdrianoLMRS WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=AdrianoLMRS)](https://github.com/anuraghazra/github-readme-stats) -->
+<br><br><br>
+
+
+## Contato
+
+- **✉ Email:** adriano.limarossi@gmail.com
+- **🕻 Telefone:** +55 12 99732-1039
+- **<img width="14" height="14"  src="https://img.icons8.com/fluency-systems-filled/50/whatsapp.png" alt="whatsapp-icon"/> WhatsApp:** [Clique aqui para conversar](https://wa.me/5512997321039)
+- **<img width="14" height="14" src="https://img.icons8.com/material-outlined/14/github.png" alt="github-icon"/> Github:** [AdrianoLMRS](https://github.com/AdrianoLMRS)
+<br><br><br>
+
+
+<p>
+  <small>Sim, isso é tudo 😄</small>
+</p>
+
+---
+
 
 <!-- <img align='right' src="public/img/icons8-pdf-50.png" alt='Pdf Icon'> -->
 <!--
