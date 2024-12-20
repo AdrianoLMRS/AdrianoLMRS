@@ -64,7 +64,7 @@
 </p>
 <br><br>
 
-### <details><summary>Pousada TAO</summary><div><br><h6>Clique [aqui](https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme) para ver o repositório<br><table width="100%">
+### <details><summary>Pousada-TAO</summary><div><br><h6>Clique [aqui](https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme) para ver o repositório<br><table width="100%">
 <br>
   <thead>
     <tr>
@@ -104,6 +104,29 @@
       <td>
         Stripe&emsp;&emsp;||&emsp;&emsp;Auth0 com MongoDB
       </td>
+    </tr>
+  </tbody>
+</table></div></details></h6>
+
+### <details><summary>Image-to-ascii</summary><div><br><h6>Clique [aqui](https://github.com/AdrianoLMRS/Image-to-ASCII) para ver o repositório<br><table width="100%">
+<br>
+  <thead>
+    <tr>
+      <th align="left" colspan="2"><strong>Detalhes do Projeto</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="20%"><strong>Linguagens</strong></td>
+      <td>C & CMAKE</td>
+    </tr>
+    <tr>
+      <td width="20%"><strong>Compiladores</strong></td>
+      <td>GCC & G++</td>
+    </tr>
+    <tr>
+      <td width="20%"><strong>OS</strong></td>
+      <td>Ubuntu (WSL)</td>
     </tr>
   </tbody>
 </table></div></details></h6>
