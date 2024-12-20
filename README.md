@@ -1,5 +1,4 @@
 <div align='left'>
-<img align='right' src="public/img/icons8-pdf-50.png"/>
 <img align="right" width=100px alt="Language English" src="https://img.shields.io/badge/lang-en_%F0%9F%87%BA%F0%9F%87%B8-blue?style=for-the-badge&logo=%F0%9F%87%BA%F0%9F%87%B8&logoSize=auto&link=https%3A%2F%2Fgithub.com%2FAdrianoLMRS%2FPousada-TAO%2Fblob%2Fmain%2F.github%2FREADME.en.md"/>
 <h1> Olá ! <br> Me chamo Adriano <img src='public/img/greeting.png' alt='Greeting icon animated'>
 </h1>
@@ -52,7 +51,7 @@
     [![Windows](https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white)](#)&emsp;[![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white)](#)&emsp;[![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)](#)
 
 
-
+<!-- <img align='right' src="public/img/icons8-pdf-50.png" alt='Pdf Icon'> -->
 <!--
 **AdrianoLMRS/AdrianoLMRS** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
