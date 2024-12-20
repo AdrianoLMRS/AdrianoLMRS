@@ -1,5 +1,5 @@
 <div align='left'>
-<img align="right" width=100px alt="Language English" src="https://img.shields.io/badge/lang-en_%F0%9F%87%BA%F0%9F%87%B8-blue?style=for-the-badge&logo=%F0%9F%87%BA%F0%9F%87%B8&logoSize=auto&link=https%3A%2F%2Fgithub.com%2FAdrianoLMRS%2FPousada-TAO%2Fblob%2Fmain%2F.github%2FREADME.en.md"/>
+<!-- <img align="right" width=100px alt="Language English" src="https://img.shields.io/badge/lang-en_%F0%9F%87%BA%F0%9F%87%B8-blue?style=for-the-badge&logo=%F0%9F%87%BA%F0%9F%87%B8&logoSize=auto&link=https%3A%2F%2Fgithub.com%2FAdrianoLMRS%2FPousada-TAO%2Fblob%2Fmain%2F.github%2FREADME.en.md"/> -->
 <h1> Olá ! <br> Me chamo Adriano <img src='public/img/greeting.png' alt='Greeting icon animated'>
 </h1>
 </div>
