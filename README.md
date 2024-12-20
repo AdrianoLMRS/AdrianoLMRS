@@ -1,5 +1,12 @@
-# Olá ! <br> Me chamo Adriano <img src='public/img/greeting.png' alt='Greeting icon animated'>
-<small>**Full-stack dev**</small>
+<div align='left'>
+<img align='right' src="public/img/icons8-pdf-50.png"/>
+<img align="right" width=100px alt="Language English" src="https://img.shields.io/badge/lang-en_%F0%9F%87%BA%F0%9F%87%B8-blue?style=for-the-badge&logo=%F0%9F%87%BA%F0%9F%87%B8&logoSize=auto&link=https%3A%2F%2Fgithub.com%2FAdrianoLMRS%2FPousada-TAO%2Fblob%2Fmain%2F.github%2FREADME.en.md"/>
+<h1> Olá ! <br> Me chamo Adriano <img src='public/img/greeting.png' alt='Greeting icon animated'>
+</h1>
+</div>
+<small><b>Full-stack dev</b></small>
+<nobr><p align='right' >asdasdasd</p>
+</nobr>
 <br>
 
 <!-- Terminal .gif -->
@@ -14,6 +21,8 @@
 <br><br><br>
 
 ## Habilidades :
+
+<!-- I'm using shields.io badges for now -->
 
 - **Frontend:**<br><br> 
     [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#)&emsp;[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff)](#)&emsp;[![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#)&emsp;[![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)&emsp;[![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)](#)&emsp;[![Sass](https://img.shields.io/badge/Sass-C69?logo=sass&logoColor=fff)](#)
