@@ -30,23 +30,23 @@
 
 
 - **Banco de dados:**<br><br> 
-    [![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?logo=mongodb&logoColor=white)](#)&emsp;[![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff)](#)&emsp;[![SQLite](https://img.shields.io/badge/SQLite-%2307405e.svg?logo=sqlite&logoColor=white)](#)&emsp;[![Redis](https://img.shields.io/badge/Redis-%23DD0031.svg?logo=redis&logoColor=white)](#)
+    [![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?logo=mongodb&logoColor=white)](#)&emsp;[![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff)](#)&emsp;[![SQLite](https://img.shields.io/badge/SQLite-%2307405e.svg?logo=sqlite&logoColor=white)](#)&emsp;[![Redis](https://img.shields.io/badge/Redis-%23DD0031.svg?logo=redis&logoColor=white)](#)&emsp;[![SQL Server](https://img.shields.io/badge/Microsoft_SQL_Server-CC2927)](#)
 
 
 - **Deploy:**<br><br>
-    [![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff)](#)&emsp;[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?logo=github&logoColor=white)](#)&emsp;[![Cmake](https://img.shields.io/badge/cMake-064F8C?style=for-the-badge&logo=cmake&logoColor=lightblue)](#)
+    [![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff)](#)&emsp;[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?logo=github&logoColor=white)](#)&emsp;[![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff)](#)&emsp;[![Cmake](https://img.shields.io/badge/cMake-064F8C?style=flat&logo=cmake&logoColor=lightblue)](#)&emsp;[![Render](https://img.shields.io/badge/Render-000000?style=flat&logo=render&logoColor=white)](#)
 
 
 - **Outras:**<br><br>
     [![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white)](#)&emsp;[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)&emsp;[![Markdown](https://img.shields.io/badge/Markdown-%23000000.svg?logo=markdown&logoColor=white)](#)&emsp;[![tmux](https://img.shields.io/badge/tmux-1BB91F?logo=tmux&logoColor=fff)](#)
 
 
-- **Ide's:**<br><br>
-    [![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white)](#)&emsp;[![PyCharm](https://img.shields.io/badge/PyCharm-000?logo=pycharm&logoColor=fff)](#)
+- **Dev tools:**<br><br>
+    [![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white)](#)&emsp;[![PyCharm](https://img.shields.io/badge/PyCharm-000?logo=pycharm&logoColor=fff)](#)&emsp;[![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](#)&emsp;[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](#)&emsp;[![Postman](https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white)](#)&emsp;[![Insomnia](https://img.shields.io/badge/-Insomnia-5849BE?style=flat&logo=insomnia&logoColor=white)](#)
 
 
 - **OS:**<br><br>
-    [![Windows](https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white)](#)&emsp;[![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white)](#)&emsp;[![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)](#)
+    [![Windows](https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white)](#)&emsp;[![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white)](#)&emsp;[![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)](#)&emsp;[![WSL](https://img.shields.io/badge/WSL-4E9A06?style=flat&logo=linux&logoColor=white)](#)
 
 <br>
 
