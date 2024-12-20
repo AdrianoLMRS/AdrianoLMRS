@@ -138,6 +138,16 @@
     </tr>
   </tbody>
 </table></div></details></h6></h3>
+
+
+<h3><details><summary>Portfólio (WIP)</summary><div><br><h6>Clique <a href='https://github.com/AdrianoLMRS/Portfolio?tab=readme-ov-file#readme'>aqui</a> para ver o repositório<br>
+<br>
+
+> **#WIP - EM BREVE...**
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AdrianoLMRS&repo=Portfolio&theme=transparent&)](https://github.com/AdrianoLMRS/Portfolio?tab=readme-ov-file#readme)
+
+</div></details></h6></h3>
 <br><br>
 
 ## Github stats
@@ -152,10 +162,15 @@
 <br><br><br>
 
 <details><summary>Repositórios</summary>
-<br>
+<br><br>
 
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AdrianoLMRS&repo=Pousada-TAO&theme=transparent&)](https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme)
+<div align='center'>
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AdrianoLMRS&repo=Pousada-TAO&theme=transparent&)](https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme)<br><br>
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AdrianoLMRS&repo=Portfolio&theme=transparent&)](https://github.com/AdrianoLMRS/Portfolio?tab=readme-ov-file#readme)<br><br>
 [![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AdrianoLMRS&repo=Image-to-ASCII&theme=transparent&)](https://github.com/AdrianoLMRS/Image-to-ASCII)</details>
+
+</div>
 
 <!-- [![AdrianoLMRS WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=AdrianoLMRS)](https://github.com/anuraghazra/github-readme-stats) -->
 
