@@ -50,6 +50,23 @@
 - **OS:**<br><br>
     [![Windows](https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white)](#)&emsp;[![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white)](#)&emsp;[![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)](#)
 
+<br>
+
+## Projetos
+<br><br>
+
+<!-- Placeholders ... -->
+<img width='29%%' align="left" alt="Language English" src="https://placehold.jp/220x500.png"/>
+
+<img width='29%%' align="right" alt="Language English" src="https://placehold.jp/220x500.png"/>
+
+<p align="center">
+<img width='29%%' alt="Language English" src="https://placehold.jp/220x500.png"/>
+</p>
+
+
+
+
 
 <!-- <img align='right' src="public/img/icons8-pdf-50.png" alt='Pdf Icon'> -->
 <!--
