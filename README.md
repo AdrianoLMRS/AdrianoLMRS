@@ -56,12 +56,12 @@
 <br><br>
 
 <!-- Placeholders ... -->
-<img width='25%' height='570px' align="left" alt="Pousada TAO project GIF" src="public/img/pousadaTao2-ezgif.com-crop.png"/>
+<img width='30%' height='570px' align="left" alt="Pousada TAO project GIF" src="public/img/pousadaTao2-ezgif.com-crop.png"/>
 
-<img width='25%' height='570px' align="right" alt="" src="https://placehold.jp/300x570.png"/>
+<img width='30%' height='570px' align="right" alt="" src="https://placehold.jp/300x570.png"/>
 
 <p align="center">
-<img width='25%' height='570px' alt="" src="https://placehold.jp/300x570.png"/>
+<img width='30%' height='570px' alt="" src="https://placehold.jp/300x570.png"/>
 </p>
 
 
