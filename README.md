@@ -64,7 +64,11 @@
 </p>
 <br><br>
 
-<h3> <details><summary>Pousada-TAO</summary><div><br><h6>Clique <a href='https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme'>aqui</a> para ver o repositório<br><table width="100%">
+<h3> <details><summary>Pousada-TAO</summary><div><br><h6>Clique <a href='https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme'>aqui</a> para ver o repositório<br>
+<br>
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=AdrianoLMRS&repo=Pousada-TAO&theme=transparent&)](https://github.com/AdrianoLMRS/Pousada-TAO)
+<table width="100%">
 <br>
   <thead>
     <tr>
@@ -130,7 +134,7 @@
     </tr>
   </tbody>
 </table></div></details></h6></h3>
-<br><br><br>
+<br><br>
 
 ## Github stats
 <br>
