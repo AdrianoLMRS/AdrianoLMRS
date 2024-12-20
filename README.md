@@ -64,7 +64,7 @@
 </p>
 <br><br>
 
-### <details><summary>Pousada-TAO</summary><div><br><h6>Clique [aqui](https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme) para ver o repositório<br><table width="100%">
+<h3> <details><summary>Pousada-TAO</summary><div><br><h6>Clique <a href='https://github.com/AdrianoLMRS/Pousada-TAO?tab=readme-ov-file#readme'>aqui</a> para ver o repositório<br><table width="100%">
 <br>
   <thead>
     <tr>
@@ -106,9 +106,9 @@
       </td>
     </tr>
   </tbody>
-</table></div></details></h6>
+</table></div></details></h6></h3>
 
-### <details><summary>Image-to-ascii</summary><div><br><h6>Clique [aqui](https://github.com/AdrianoLMRS/Image-to-ASCII) para ver o repositório<br><table width="100%">
+<h3><details><summary>Image-to-ascii</summary><div><br><h6>Clique <a href='https://github.com/AdrianoLMRS/Image-to-ASCII'>aqui</a> para ver o repositório<br><table width="100%">
 <br>
   <thead>
     <tr>
@@ -129,7 +129,7 @@
       <td>Ubuntu (WSL)</td>
     </tr>
   </tbody>
-</table></div></details></h6>
+</table></div></details></h6></h3>
 
 
 
