@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack command for info in readme profile</title>
+    <style>
+        :root {
+            font-size: x-large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: snow;
+        }
+        body { background-color: wheat; }
+        .root {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            height: 396px;
+            width: 1584px;
+            background-color: hsl(0, 0%, 10%);
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: 85%;
+            padding: 10px;
+            border: 1px solid hsl(0, 0%, 15%);
+        }
+        span.get {
+            color: lightblue;   
+        }
+        span.green {
+            color: #20C20E;   
+        }
+        span.yellow {
+            color: greenyellow;
+        }
+        .results {
+            width: 100%;
+            font-size: medium;
+        }
+        .flex {
+            position: relative;
+            left: 20%;
+            margin-top: -8% !important;
+            display: flex;
+            flex-direction: row;
+        }
+        .stack {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: snow;
+        }
+        li strong {
+            color: #ffa657;
+            font-weight: initial;
+        }
+        .header {
+            display: inline-block;
+            position: relative;
+            font-size: larger;
+            color: #ffa657;
+            bottom: 10px;
+            overflow: visible !important;
+            transition: opacity 300ms;
+        }
+        .pseudo::after {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: 0;
+            height: 1px;
+            max-width: 80px;
+            width: 120%;
+            background-color: #ffa657;
+        }
+        .about {
+            width: 50%;
+        }
+        #avatar {
+            margin-top: 20px;
+            max-width: 65px;
+            height: auto;
+            border-radius: 10px; 
+            border: 1px dashed #20C20E; 
+            padding: 5px;
+            background-color: #000000; 
+        }
+        .cmd {
+            color: goldenrod;
+            white-space: nowrap;
+        }
+        .cmd p {
+            display: inline-block;
+            white-space: nowrap; /* Keeps the content on a single line */
+        }
+        .typewriter > * {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: var(--_border-width, .15em) solid var(--_border-color, #20C20E); /* The typwriter cursor */
+            letter-spacing: .15em; /* Adjust as needed */
+            margin: 0 !important;
+            animation: 
+                typing2 2000ms steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+                
+        .simple-typewriter li {
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            letter-spacing: .1em; /* Adjust as needed */
+            white-space: nowrap;
+            animation: 
+                typing 1.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+            animation-delay: 3.4s;
+        }
+
+            @keyframes typing {
+            from { width: 0; }
+            to { width: 100% }
+        }
+            @keyframes typing2 {
+            from { width: 0 }
+            to { width: 70%; }
+        }
+
+            @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: var(--_border-color, #20C20E); }
+        }
+
+        .loading {
+            font-size: 20px;
+            margin-top: -50px;
+            font-family: Arial, sans-serif;
+            display: inline-block;
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="root">
+        <div class="content">
+            <!-- inspired by https://github.com/Andrew6rant/Andrew6rant -->
+            <div class="cmd typewriter">
+                <p>
+                    <span class="green">curl</span> <span class="get">-X</span> <span style="color: #3b78ff;">GET</span> <span class="get">-i</span>
+                    https://AdrianoLMRS/<span class="yellow">info</span></div>
+                </p><br>
+                <div id="loading" style="opacity: 0;" class="loading">loading<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></div>
+                <div style="display: none;" class="loading" id="succes">success!</div>
+            <br><br>
+            <div class="results">
+                <div class="flex">
+                    <div class="about" style="position: absolute; margin-left: 52.5% !important;">
+                        <ul class="simple-typewriter">
+                            <header class="header pseudo">Sobre</header>
+                            <li><strong>Nome:</strong> <span id="">Adriano Lima Rossi</span></li>
+                            <li><strong>Repositórios Públicos:</strong> <span id="repos"></span></li>
+                            <li><strong>Seguidores:</strong> <span id="followers"></span></li>
+                            <li><strong>Seguindo:</strong> <span id="following"></span></li>
+                            <li><strong>Localização:</strong> <span id="loc"></span></li>
+                            <li><strong>Perfil:</strong> <span id="">www.linkedin.com/in/adrianoweb</span></li>
+                            <li><strong>Data de Criação:</strong> <span id="created_at"></span></li>
+                            <!-- <li><img alt="Avatar Logo Github" id="avatar"></li> -->
+                        </ul>
+                    </div>
+                    <div class="stack" style="position: absolute; margin-left: 18.5% !important;">
+                        <ul class="simple-typewriter">
+                            <header class="header pseudo">Stack</header>
+                            <li><strong>Frontend:</strong> JavaScript, TypeScript, React,</li>
+                            <li>HTML, CSS, SASS</li>
+                            <li><strong>Backend:</strong> Node.js, Express.js</li>
+                            <li><strong>Banco de dados:</strong> MongoDB, SQL Server,</li>
+                            <li>SQLite, Redis</li>
+                            <li><strong>Deploy:</strong> Docker, GitHub Pages, CMake</li>
+                            <li><strong>Outras:</strong> C, Python</li>
+                            <li><strong>IDE's:</strong> VS-Code, Pycharm</li>
+                            <li><strong>OS:</strong> Windows, WSL, Ubuntu, Linux</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.simple-typewriter li').forEach((li) => {
+            li.style.width = '0'; 
+        });
+        document.querySelectorAll('.header').forEach((h) => {
+            h.style.opacity = '0'; 
+        });
+
+        setTimeout(() => {
+            document.querySelectorAll('.simple-typewriter li').forEach((li) => {
+                li.style.width = ''; 
+            });
+        }, 3400);
+
+        setTimeout(() => {
+            document.querySelectorAll('.header').forEach((h) => {
+                h.style.opacity = '1'; 
+            });
+        }, 3200);
+
+        setTimeout(() => {
+            document.querySelector('.cmd > p').style.border = 'none'
+        }, 4000);
+
+    </script>
+    <script>
+        const loadingElement = document.getElementById('loading');
+
+        setTimeout(() => {
+            loadingElement.style.opacity = '1';
+        }, 2050); 
+
+        function addDots() {
+            let dots = 0;
+            const interval = setInterval(() => {
+                loadingElement.textContent = 'loading' + '.'.repeat(dots);
+
+                dots++;
+
+                if (dots > 3) {
+                    dots = 0;
+                }
+            }, 200);
+
+            return interval;
+        }
+
+        function stopLoadingAnimation(interval) {
+            setTimeout(() => {
+                clearInterval(interval);
+                loadingElement.textContent = 'loading'; 
+                loadingElement.style.display = 'none';
+                document.getElementById('succes').style.display = 'block'; 
+            }, 3000); 
+        }
+
+        const interval = addDots();
+
+        stopLoadingAnimation(interval);
+
+    </script>
+
+    <script>
+        // GitHub API for getting profile info
+        async function fetchGitHubStats() {
+            const username = 'AdrianoLMRS'; // My username
+            const response = await fetch(`https://api.github.com/users/${username}`);
+            const data = await response.json();
+            console.log(data);
+            
+            // HTML data
+            document.getElementById('repos').textContent = data.public_repos;
+            document.getElementById('followers').textContent = data.followers;
+            document.getElementById('following').textContent = data.following;
+            document.getElementById('loc').textContent = data.location;
+            document.getElementById('profile').textContent = data.html_url;
+            // document.getElementById('avatar').src = data.avatar_url;
+            document.getElementById('created_at').textContent = new Date(data.created_at).toLocaleDateString();
+        }
+
+        // Calling the function on page load to animate the curl command
+        window.onload = function() {          
+            fetchGitHubStats();
+        };
+    </script>
+</body>
+</html>
