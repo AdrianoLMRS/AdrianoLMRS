@@ -3,7 +3,7 @@
 <h1> Olá ! <br> Me chamo Adriano <img src='public/img/greeting.png' alt='Greeting icon animated'>
 </h1>
 </div>
-<small><b>Full-stack dev</b></small>
+<small><b>Full-stack Developer<br>Looking for job 💼</b></small>
 <br><br><br>
 
 <!-- Terminal .gif -->
