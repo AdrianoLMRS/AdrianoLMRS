@@ -8,6 +8,7 @@ Treinos & exercícios + execução deles
 
 1. <details><summary><b>Pulley Frente</b></summary>
    <p><a href="https://www.youtube.com/watch?v=Hu3TbPgEGDo" target="_blank">Vídeo do Laércio</a></p>
+   <br><img src="./public/img/pulley-frente.gif" ><br>
    </details>
 
 2. <details><summary><b>Crucifixo Máquina / Supino Máquina</b></summary>
@@ -21,6 +22,7 @@ Treinos & exercícios + execução deles
       <li>Execução - Alonga o máximo mas sem encostar (volta), fechou; encostou; aperta e empurra (ida).</li>
     </ol>
    </p>
+   <br><img src="./public/img/cruxifixo-maquina.jpg" ><br>
    </details>
 
 3. <details><summary><b>Elevação Lateral</b></summary>
@@ -33,6 +35,7 @@ Treinos & exercícios + execução deles
       <li>Ombro; cutuvelo e punho na mesma reta/linha.</li>
     </ol>
    </p>
+   <br><img src="./public/img/elevacao-lateral.gif" ><br>
    </details>
 
 4. <details><summary><b>Agachamento / Leg Press</b></summary>
@@ -48,6 +51,7 @@ Treinos & exercícios + execução deles
       <li>Não trazer o joelho para dentro na subida.</li>
     </ol>
    </p>
+   <br><img src="./public/img/leg-press.gif" ><br>
    </details>
 
 5. <details><summary><b>Cadeira Flexora</b></summary>
@@ -67,6 +71,7 @@ Treinos & exercícios + execução deles
       <li>Pe de "bailarina" e depois pé de "voadora"</li>
     </ol>
    </p>
+   <br><img src="./public/img/cadeira-flexora.avif" ><br>
    </details>
 
 ### Exercícios Opcionais
@@ -82,6 +87,7 @@ Treinos & exercícios + execução deles
       <li>Não balançar o corpo.</li>
     </ol>
    </p>
+   <br><img src="./public/img/rosca-direta.gif" ><br>
    </details>
 
 7. <details><summary><b>Tríceps Pulley</b></summary>
@@ -90,12 +96,17 @@ Treinos & exercícios + execução deles
     <ol type="1" >
       <li>Pés paralelos OU antero posterior.</li>
       <li>Cutuvelo cola no corpo e postura encaixada.</li>
+      <li>Boa postura - peito estufado, pés separados, ombros para trás, cutuvelo fechado etc.</li>
+      <li>Amplitude - descer tudo (cutuvelo ficar reto) e subir inteiro sem relaxar o músculo.</li>
+      <li>Não compensar no lado fraco (causa assimetria).</li>
     </ol>
    </p>
+   <br><img src="./public/img/triceps-pulley.gif" ><br>
    </details>
 
 8. <details><summary><b>Panturrilha em Pé</b></summary>
-   <p></p>
+   <p>Panturrilha né...</p>
+   <br><img src="./public/img/panturrilha-em-pe.gif" ><br>
    </details>
 
 ### Full Body 2 (30 minutos)
