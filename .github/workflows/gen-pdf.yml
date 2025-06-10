@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write  # Allow the workflow to push changes to the repository
+
 jobs:
   generate-pdf:
     runs-on: ubuntu-latest
@@ -16,6 +19,9 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Need for GIT actions
+          token: ${{ secrets.GITHUB_TOKEN }} # Use the GITHUB_TOKEN secret for authentication
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -33,3 +39,20 @@ jobs:
         with:
           name: curriculo.pdf
           path: curriculo.pdf
+
+      - name: Commit to PDF branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Create/switch to the pdf branch
+          git checkout -B pdf
+          
+          # Add & commit the generated PDF
+          git add ../curriculo.pdf
+          git commit -m "Auto Update curriculo.pdf [skip ci]"
+          
+          # Force push to the pdf branch
+          git push origin pdf --force
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
