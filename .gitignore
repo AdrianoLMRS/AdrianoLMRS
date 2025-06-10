@@ -1,1 +1,7 @@
 *.pub
+
+# build output
+dist/
+
+# dependencies
+node_modules/

@@ -1,0 +1,86 @@
+@import "./fonts/minion-pro/style.css";
+
+:root {
+    --primary: #003366;
+    --secondary: #666666;
+    --text: #000000;
+    --link: #1a0dab;
+    --header-hr-color: #cccccc;
+    --font: 'Minion Pro Regular', 'Arial', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: var(--font);
+    background-color: snow;
+    color: var(--text);
+    line-height: 1.4;
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+}
+header h1 {
+    color: var(--primary);
+    font-size: 2.2rem;
+}
+header h2 {
+    color: var(--secondary);
+    font-size: 1.2rem;
+}
+header .social ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+header .social ul a { color: var(--link); text-decoration: underline; }
+
+hr { opacity: 0; }
+
+section {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: var(--primary);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--primary);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+ul { list-style: none; padding-left: 0; }
+
+ul li {
+    margin-bottom: 6px;
+    font-size: .9rem;
+}
+
+.skills__list {
+    text-transform: uppercase;
+}
+
+.projects__list {
+    font-size: .9rem;
+}
+
+.projects__list > li {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.projects__list h4 { font-size: 1rem; }
+.projects__list a { color: var(--link); }
+
+.education__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.education__list li { width: 50%; padding: 0 10px; }
+.education__list li[data-style] { text-align: end; }
