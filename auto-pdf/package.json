@@ -5,7 +5,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node main.js ../curriculo.pdf",
-    "start:dev": "node main.js"
+    "start:dev": "node main.js",
+    "optimize": "node optimize.js ../curriculo.pdf ../curriculo.min.pdf",
+    "optimize:dev": "node optimize.js",
+    "compress": "node optimize-ghost.js ../curriculo.min.pdf ../curriculo.min-gh.pdf",
+    "compress:dev": "node optimize-ghost.js ./src/dist/curriculo.pdf ./src/dist/curriculo.min-gh.pdf"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +17,8 @@
   "type": "module",
   "description": "",
   "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
     "puppeteer": "^24.10.0"
   }
 }

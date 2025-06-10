@@ -28,17 +28,48 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
+      - name: Install system dependencies
+        run: |
+          sudo apt-get install -y ghostscript poppler-utils
+  
+      - name: Install Node dependencies
         run: npm ci
 
       - name: Generate PDF
         run: npm start
 
+      - name: Check if PDF was generated
+        run: |
+          if [ ! -f ../curriculo.pdf ]; then
+            echo "curriculo.pdf not found!"
+            exit 1
+          fi
+
+      - name: Optimize PDF with pdf-lib
+        run: npm run optimize
+
+      - name: Check if optimized PDF was generated (pdf-lib)
+        run: |
+          if [ ! -f ../curriculo.min.pdf ]; then
+            echo "Optimized curriculo.pdf not found!"
+            exit 1
+          fi
+
+      - name: Optimize PDF with Ghostscript
+        run: npm run compress
+
+      - name: Check if optimized PDF was generated (Ghostscript)
+        run: |
+          if [ ! -f ../curriculo.min-gh.pdf ]; then
+            echo "Optimized curriculo.min.pdf not found!"
+            exit 1
+          fi
+
       - name: Upload generated PDF
         uses: actions/upload-artifact@v4
         with:
           name: curriculo.pdf
-          path: curriculo.pdf
+          path: curriculo.min-gh.pdf
 
       - name: Commit to PDF branch
         run: |
@@ -49,7 +80,7 @@ jobs:
           git checkout -B pdf
           
           # Add & commit the generated PDF
-          git add ../curriculo.pdf
+          git add ../curriculo.pdf ../curriculo.min.pdf ../curriculo.min-gh.pdf
           git commit -m "Auto Update curriculo.pdf [skip ci]"
           
           # Force push to the pdf branch
