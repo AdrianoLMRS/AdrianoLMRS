@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'auto-pdf/**'  # Trigger only if files in the auto-pdf directory are changed
 
 permissions:
   contents: write  # Allow the workflow to push changes to the repository
