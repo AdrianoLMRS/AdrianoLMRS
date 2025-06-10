@@ -11,6 +11,7 @@ permissions:
 jobs:
   generate-pdf:
     runs-on: ubuntu-latest
+    environment: Main
 
     defaults:
       run:
@@ -36,7 +37,11 @@ jobs:
         run: npm ci
 
       - name: Generate PDF
-        run: npm start
+        id: generate
+        run: |
+          npm start # Generate the PDF from HTML
+          ORIGINAL_SIZE=$(stat -c%s ../curriculo.pdf) # Get the original size of the PDF (need for DISCORD notification)
+          echo "ORIGINAL_SIZE=$ORIGINAL_SIZE" >> $GITHUB_ENV # Save the original size to an environment variable
 
       - name: Check if PDF was generated
         run: |
@@ -44,9 +49,16 @@ jobs:
             echo "curriculo.pdf not found!"
             exit 1
           fi
+          echo "\033[0;32m ../curriculo.pdf generated successfully. \033[0m"
 
       - name: Optimize PDF with pdf-lib
-        run: npm run optimize
+        run: |
+          npm run optimize
+          # For Dicord notification
+          OPTIMIZED_SIZE=$(stat -c%s ../curriculo.min.pdf)
+          REDUCTION=$(echo "scale=2; (1 - $OPTIMIZED_SIZE / $ORIGINAL_SIZE) * 100" | bc)
+          echo "OPTIMIZED_SIZE=$OPTIMIZED_SIZE" >> $GITHUB_ENV
+          echo "REDUCTION=$REDUCTION" >> $GITHUB_ENV
 
       - name: Check if optimized PDF was generated (pdf-lib)
         run: |
@@ -54,9 +66,16 @@ jobs:
             echo "Optimized curriculo.pdf not found!"
             exit 1
           fi
+          echo "\033[0;32m ../curriculo.min.pdf generated successfully. \033[0m"
 
       - name: Optimize PDF with Ghostscript
-        run: npm run compress
+        run: |
+          npm run compress
+          # For Discord notification
+          OPTIMIZED_SIZE_GH=$(stat -c%s ../curriculo.min-gh.pdf)
+          REDUCTION_GH=$(echo "scale=2; (1 - $OPTIMIZED_SIZE_GH / $ORIGINAL_SIZE) * 100" | bc)
+          echo "OPTIMIZED_SIZE_GH=$OPTIMIZED_SIZE_GH" >> $GITHUB_ENV
+          echo "REDUCTION_GH=$REDUCTION_GH" >> $GITHUB_ENV
 
       - name: Check if optimized PDF was generated (Ghostscript)
         run: |
@@ -64,6 +83,7 @@ jobs:
             echo "Optimized curriculo.min.pdf not found!"
             exit 1
           fi
+          echo "\033[0;32m ../curriculo.min-gh.pdf generated successfully. \033[0m"
 
       - name: Upload generated PDF
         uses: actions/upload-artifact@v4
@@ -78,6 +98,10 @@ jobs:
           
           # Create/switch to the pdf branch
           git checkout -B pdf
+
+          # Capture changed files (For Discord notification)
+          CHANGED_FILES=$(git diff --name-only --cached)
+          echo "CHANGED_FILES=$CHANGED_FILES" >> $GITHUB_ENV
           
           # Add & commit the generated PDF
           git add ../curriculo.pdf ../curriculo.min.pdf ../curriculo.min-gh.pdf
@@ -87,3 +111,60 @@ jobs:
           git push origin pdf --force
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Prepare Discord notification
+        id: discord-data
+        run: |
+          # Calculate sizes in KB with 2 decimal places
+          ORIGINAL_SIZE_KB=$(echo "scale=2; ${{ env.ORIGINAL_SIZE }} / 1024" | bc)
+          OPTIMIZED_SIZE_KB=$(echo "scale=2; ${{ env.OPTIMIZED_SIZE }} / 1024" | bc)
+          OPTIMIZED_SIZE_GH_KB=$(echo "scale=2; ${{ env.OPTIMIZED_SIZE_GH }} / 1024" | bc)
+      
+          # Get current timestamp
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+      
+          # Create a temporary file for the JSON payload
+          cat << EOF > payload.json
+          {
+            "content": "📄 PDF Updated with success!",
+            "embeds": [
+              {
+                "title": "Currículo PDF Update",
+                "color": 65280,
+                "fields": [
+                  {"name": "Repository", "value": "$GITHUB_REPOSITORY", "inline": true},
+                  {"name": "Workflow", "value": "https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID", "inline": true},
+                  {"name": "Branch Commit", "value": "pdf", "inline": true},
+                  {"name": "Original size", "value": "$ORIGINAL_SIZE_KB KB", "inline": true},
+                  {"name": "Optimized size (PDF-LIB)", "value": "$OPTIMIZED_SIZE_KB KB", "inline": true},
+                  {"name": "Optimized size (Ghostscript)", "value": "$OPTIMIZED_SIZE_GH_KB KB", "inline": true},
+                  {"name": "Reduction (PDF-LIB)", "value": "${{ env.REDUCTION }}%", "inline": true},
+                  {"name": "Reduction (Ghostscript)", "value": "${{ env.REDUCTION_GH }}%", "inline": true},
+                  {"name": "Files changed", "value": "${{ env.CHANGED_FILES || 'None' }}", "inline": false},
+                  {"name": "PDF Updated", "value": "https://github.com/$GITHUB_REPOSITORY/blob/pdf/curriculo.pdf", "inline": false}
+                ],
+                "footer": {"text": "GitHub Actions • $TIMESTAMP"}
+              }
+            ]
+          }
+          EOF
+      
+          # Read the payload into an environment variable
+          DISCORD_PAYLOAD=$(cat payload.json | jq -c .)
+          echo "DISCORD_PAYLOAD=$DISCORD_PAYLOAD" >> $GITHUB_ENV
+          echo "Generated Discord payload:"
+          echo "$DISCORD_PAYLOAD"
+
+      - name: Send Discord notification
+        if: success() && env.DISCORD_PAYLOAD != ''
+        run: |
+          curl -X POST \
+            -H "Content-Type: application/json" \
+            -d '${{ env.DISCORD_PAYLOAD }}' \
+            "${{ secrets.DISCORD_DEPLOY_HOOK }}"
+
+      - name: Failure notification
+        if: failure()
+        run: |
+          echo "The PDF generation failed. Please check the logs for more details."
+          curl -X POST -H "Content-Type: application/json" -d '{"content": "PDF generation failed!"}' "$DISCORD_WEBHOOK_URL"
