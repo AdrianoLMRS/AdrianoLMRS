@@ -4,7 +4,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main.js ../curriculo-test.pdf",
+    "start": "node main.js ../curriculo.pdf",
     "start:dev": "node main.js"
   },
   "keywords": [],
