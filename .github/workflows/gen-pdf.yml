@@ -1,6 +1,7 @@
 name: Generate PDF from HTML
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -171,3 +172,4 @@ jobs:
           echo "The PDF generation failed. Please check the logs for more details."
 
           curl -X POST -H "Content-Type: application/json" -d '{"content": "PDF generation failed!"}' "$DISCORD_WEBHOOK_URL"
+
