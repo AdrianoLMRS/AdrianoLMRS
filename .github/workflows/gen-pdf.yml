@@ -1,13 +1,12 @@
 name: Generate PDF from HTML
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
     paths:
       - 'auto-pdf/**'  # Trigger only if files in the auto-pdf directory are changed
-    paths-ignore:
-      - '**.md'
 
 permissions:
   contents: write  # Allow the workflow to push changes to the repository
@@ -171,4 +170,6 @@ jobs:
         if: failure()
         run: |
           echo "The PDF generation failed. Please check the logs for more details."
+
           curl -X POST -H "Content-Type: application/json" -d '{"content": "PDF generation failed!"}' "$DISCORD_WEBHOOK_URL"
+
