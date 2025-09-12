@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Banner</title>
+    <style>
+        *,
+        *::after,
+        *::before {
+          margin: 0;
+          padding: 0;
+          font-family: 'Poppins', sans-serif;
+          box-sizing: border-box;
+        }
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        main {
+            position: relative;
+            background-color: #1A1B25;
+            color: #ECFFF8;
+            width: 1584px;
+            height: 396px;
+        }
+        .top {
+            font-size: 2em;
+            padding: 15px;
+            width: 50%;
+        }
+        .top span:first-child {
+            font-weight: 600;
+            color: #F0803C;
+        }
+        .top span:last-child {
+            font-weight: 300;
+            color: #BDA0BC;
+        }
+        .right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: end;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="top">
+            <span>Adriano Rossi</span> -
+            <span>Frontend Developer</span>
+        </div>
+        <div class="right">
+            <div>
+                <img src="https://img.icons8.com/color/96/javascript--v1.png">
+                <img src="https://img.icons8.com/color/96/typescript.png">
+                <img src="https://img.icons8.com/offices/96/react.png">
+                <img src="https://img.icons8.com/nolan/96/astro-js.png">
+            </div>
+            <div>
+                <img src="https://img.icons8.com/color/96/sass-avatar.png">
+                <img src="https://img.icons8.com/color/96/tailwindcss.png">
+                <img src="https://img.icons8.com/color/96/bootstrap--v2.png">
+            </div>
+            <div>
+                <img src="https://img.icons8.com/fluency/96/node-js.png">
+                <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png">
+                <img style="filter: invert();" src="https://img.icons8.com/ios-filled/96/sqlite.png">
+                <img src="https://img.icons8.com/fluency/96/docker.png">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
